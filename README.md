@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Portfolio Title Here</title>
+  <title>Portfolio</title>
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -14,6 +14,10 @@
   <style>
     body { font-family: "Poppins", sans-serif; }
 
+    /* Keep page anchors from hiding behind the fixed navbar */
+    html { scroll-padding-top: 80px; }
+
+    /* Ensure the hero keeps space for the fixed navbar */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -27,17 +31,17 @@
       border-radius: 50px;
       padding: 0.6rem 1.4rem;
     }
+
+    .navbar.fixed-top { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
   </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 fixed-top">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">
-      <!-- Replace with your brand or name -->
-      YourLogoHere
+      Portfolio
     </a>
 
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
@@ -52,14 +56,10 @@
         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
-
-      <!-- Button – insert your CV link -->
-      <a href="your-cv-link-here.pdf" class="btn btn-primary btn-pill">Download CV</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO SECTION -->
 <header class="hero" id="home">
   <div class="container">
     <div class="row align-items-center">
@@ -67,28 +67,22 @@
       <div class="col-lg-6">
         <p class="text-muted mb-1">Hi,</p>
 
-        <h1 class="fw-bold">I'm <span><!-- Insert Your Name Here --> Your Name</span></h1>
+        <h1 class="fw-bold">I'm <span> Allexy Casandra Teoco</span></h1>
 
         <h2 class="fw-bold text-danger">
-          <!-- Insert Your Profession Here -->
-          Your Profession (e.g., Web Designer)
+          Web Designer & Developer
         </h2>
 
-        <p class="mt-3 text-muted">
-          <!-- Write a short 1–2 sentence description about yourself -->
-          Write your short introduction or tagline here.
         </p>
 
         <div class="d-flex gap-3 mt-4">
           <a href="#contact" class="btn btn-primary btn-pill">Hire Me</a>
-          <a href="your-cv-link-here.pdf" class="btn btn-outline-dark btn-pill">Download CV</a>
         </div>
       </div>
 
       <div class="col-lg-6 mt-5 mt-lg-0">
-        <!-- Replace image URL with your own -->
         <img 
-          src="your-image-here.jpg" 
+          src="profile.png" 
           class="img-fluid rounded-4"
           alt="Your Photo Here"
         />
@@ -105,14 +99,9 @@
 
     <p>
       <!-- Write your full 'About Me' paragraph here -->
-      Insert a short biography describing who you are, what you do, and your passion.
+      I have basic knowledge in web design, coding and technology. I am eager to know more about how digital systems work.
     </p>
 
-    <ul>
-      <li><!-- Insert your skills or expertise area #1 --> Skill 1</li>
-      <li><!-- Insert skill #2 --> Skill 2</li>
-      <li><!-- Insert skill #3 --> Skill 3</li>
-    </ul>
   </div>
 </section>
 
@@ -126,18 +115,18 @@
         <h4>Experience</h4>
 
         <div class="mt-3">
-          <h6><!-- Insert Job Title Here --> Job Title</h6>
-          <small class="text-muted"><!-- Company + Dates --> Company • Year–Year</small>
+          <h6><!-- Insert Job Title Here --> Visual Graphic Design</h6>
+          <small class="text-muted"><!-- Company + Dates --> Microcadd • 3 months</small>
           <p class="small">
             <!-- Short description of what you did -->
-            Write your roles and achievements here.
+            We did Logo, Packaging, Store, Poster, Booth design and more.
           </p>
         </div>
 
         <div class="mt-3">
-          <h6>Another Job Title Here</h6>
-          <small class="text-muted">Company • Year–Year</small>
-          <p class="small">Describe your responsibilities here.</p>
+          <h6>Computer Systems Servicing</h6>
+          <small class="text-muted">Mary Grace International • 3 months</small>
+          <p class="small">We set up, fix and maintain network and computers. We troubleshoot hardware and software issues. We check cables and Devices to make sure everything runs smoothly.</p>
         </div>
       </div>
 
@@ -146,13 +135,12 @@
 
         <p class="mt-3">
           <!-- Insert education -->
-          Your Degree / Course • School Name • Year
+          Information Technology- Software Engineer • Trinity University of Asia • 2nd year
         </p>
 
         <ul class="small">
-          <li><!-- Skill 1 --> Skill #1</li>
-          <li><!-- Skill 2 --> Skill #2</li>
-          <li><!-- Skill 3 --> Skill #3</li>
+          <li><!-- Skill 1 --> Computer Systems Servicing NC2</li>
+          <li><!-- Skill 2 --> Visual Graphic Design NC3</li>
         </ul>
       </div>
     </div>
@@ -160,40 +148,38 @@
 </section>
 
 <!-- PORTFOLIO SECTION -->
-<section id="portfolio" class="py-5">
+<section id="Certificate" class="py-5">
   <div class="container">
     <h2 class="fw-bold text-center mb-5">Portfolio</h2>
 
-    <div class="row g-4">
+    <div class="row g-4 justify-content-center">
 
-      <!-- Portfolio Item -->
-      <div class="col-md-4">
+      <!-- Mary Grace -->
+      <div class="col-md-4 text-center">
         <div class="p-4 border rounded">
-          <h6><!-- Project Title --> Project Name</h6>
+          <h6>Mary Grace International</h6>
           <p class="small">
-            <!-- Insert project description -->
-            Short description of what this project is about.
+            (April 1–June 27) Computer Systems Servicing where we install, maintain,
+            and repair computer systems and networks.
           </p>
         </div>
       </div>
 
-      <div class="col-md-4">
+      <!-- Microcadd -->
+      <div class="col-md-4 text-center">
         <div class="p-4 border rounded">
-          <h6>Project Name</h6>
-          <p class="small">Describe the project here.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="p-4 border rounded">
-          <h6>Project Name</h6>
-          <p class="small">Describe the project here.</p>
+          <h6>Microcadd Institute</h6>
+          <p class="small">
+            (April–July) Visual Graphic Design where we create visual content
+            using images, colors, and typography.
+          </p>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
 
 <!-- DOG VS CAT GAME SECTION -->
 <section id="game" class="py-5">
@@ -224,41 +210,50 @@
   <div class="container">
     <h2 class="fw-bold text-center mb-4">Contact</h2>
 
-    <p class="text-center mb-4">
-      <!-- Insert your short contact message -->
-      Enter a message encouraging clients to contact you.
-    </p>
 
     <div class="row justify-content-center">
-      <div class="col-lg-6">
-
-        <form>
-          <div class="mb-3">
-            <label>Name</label>
-            <input type="text" class="form-control" placeholder="Enter your name" />
+      <div class="col-lg-10">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+              <h5 class="fw-bold">Contact Information</h5>
+                <p class="mb-1"><strong>Email:</strong> allexycasandrasteoco@tua.edu.ph</p>
+                <p class="mb-1"><strong>Phone:</strong> +1 234 567 890</p>
+                <p class="mb-1"><strong>Location:</strong> Quezon City, Philippines</p>
+            </div>
           </div>
 
-          <div class="mb-3">
-            <label>Email</label>
-            <input type="email" class="form-control" placeholder="Enter your email" />
+          <div class="col-md-8">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label>Name</label>
+                  <input id="contactName" name="name" type="text" class="form-control" placeholder="Enter your name" />
+                </div>
+
+                <div class="mb-3">
+                  <label>Email</label>
+                  <input id="contactEmail" name="email" type="email" class="form-control" placeholder="Enter your email" />
+                </div>
+
+                <div class="mb-3">
+                  <label>Message</label>
+                  <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Write any message here"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 btn-pill">Send Message</button>
+              </form>
+            </div>
           </div>
 
-          <div class="mb-3">
-            <label>Message</label>
-            <textarea class="form-control" rows="4" placeholder="Write any message here"></textarea>
-          </div>
-
-          <button class="btn btn-primary w-100 btn-pill">Send Message</button>
-        </form>
-
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <footer class="text-center py-3">
-  <!-- Insert your footer text -->
-  © Your Name Here — All Rights Reserved
+  © Allexy Casandra Teoco — All Rights Reserved
 </footer>
 
 <!-- Bootstrap JS -->
@@ -653,31 +648,6 @@ function tryStartBackground() {
     });
   }
 })();
-</script>
-
-<!-- Firebase SDK -->
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCeBl_8THqfjemSQknpfFVDLCjIAyxCUso",
-    authDomain: "portfolio-15c51.firebaseapp.com",
-    projectId: "portfolio-15c51",
-    storageBucket: "portfolio-15c51.firebasestorage.app",
-    messagingSenderId: "126687184888",
-    appId: "1:126687184888:web:4d35b08b3254d408ddf80d",
-    measurementId: "G-R75RWTEJW8"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
 </script>
 
 </body>
